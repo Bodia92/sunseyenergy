@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1747736586251"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1747736586251">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<!--
+<a href="" class="header__logo">
+<img src="@img/logo.svg" alt="logo">
+</a>
+-->
+					<a href="" class="header__logo">
+						<img src="data:image/svg+xml,%3csvg%20width='27'%20height='35'%20viewBox='0%200%2027%2035'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11.2939%207.39032C14.8589%203.77127%2020.6566%203.77127%2024.2403%207.39032L26.8296%204.76175C21.8199%20-0.323968%2013.6955%20-0.323968%208.68584%204.76175C3.67612%209.84746%203.67612%2018.0951%208.68584%2023.1808L11.2939%2020.5522C7.71016%2016.9141%207.71016%2011.0284%2011.2939%207.39032ZM19.0618%2012.6665L16.4725%2015.2951C20.0374%2018.9141%2020.0374%2024.8189%2016.4725%2028.4379C12.8887%2032.076%207.09098%2032.076%203.50726%2028.4379L0.917969%2031.0665C5.92768%2036.1522%2014.052%2036.1522%2019.0618%2031.0665C24.0715%2025.9808%2024.0715%2017.7332%2019.0618%2012.6665Z'%20fill='%23FFD100'/%3e%3c/svg%3e" alt="logo-icon">
+						<img src="data:image/svg+xml,%3csvg%20width='124'%20height='26'%20viewBox='0%200%20124%2026'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.49926%200.259445C10.1156%200.259445%2011.976%202.50283%2011.976%206.41818V7.20124H8.46421V6.18537C8.46421%204.42876%207.79529%203.75151%206.60378%203.75151C5.41227%203.75151%204.74335%204.42876%204.74335%206.18537C4.74335%2011.2224%2012.0178%2012.1748%2012.0178%2019.2012C12.0178%2023.1166%2010.1156%2025.36%206.47836%2025.36C2.82021%2025.36%200.917969%2023.1166%200.917969%2019.2012V17.6774H4.4507V19.434C4.4507%2021.1907%205.18233%2021.8256%206.37384%2021.8256C7.54444%2021.8256%208.29698%2021.1907%208.29698%2019.434C8.29698%2014.397%201.02249%2013.4446%201.02249%206.41818C1.02249%202.50283%202.88292%200.259445%206.49926%200.259445ZM18.0381%200.534577V19.4764C18.0381%2021.233%2018.7697%2021.8679%2019.9612%2021.8679C21.1528%2021.8679%2021.8844%2021.233%2021.8844%2019.4764V0.534577H25.3962V19.2224C25.3962%2023.1589%2023.5149%2025.4023%2019.8567%2025.4023C16.2195%2025.4023%2014.3172%2023.1589%2014.3172%2019.2224V0.534577H18.0381ZM31.1865%207.30706V25.0848H27.8419V0.534577H32.5035L36.3079%2015.2224V0.534577H39.6316V25.0848H35.8062L31.1865%207.30706ZM47.4078%200.259445C51.0241%200.259445%2052.8846%202.50283%2052.8846%206.43934V7.20124H49.3728V6.18537C49.3728%204.42876%2048.6829%203.77267%2047.5123%203.77267C46.3208%203.77267%2045.6519%204.42876%2045.6519%206.18537C45.6519%2011.2436%2052.9264%2012.1748%2052.9264%2019.2012C52.9264%2023.1378%2051.0241%2025.3811%2047.366%2025.3811C43.7288%2025.3811%2041.8265%2023.1378%2041.8265%2019.2012V17.6986H45.3383V19.4552C45.3383%2021.1907%2046.0909%2021.8256%2047.2824%2021.8256C48.453%2021.8256%2049.2055%2021.1907%2049.2055%2019.4552C49.2055%2014.397%2041.931%2013.4446%2041.931%206.43934C41.931%202.50283%2043.7915%200.259445%2047.4078%200.259445ZM67.1618%2025.0848H63.42L62.772%2020.6404H58.215L57.567%2025.0848H54.1597L57.9433%200.534577H63.3782L67.1618%2025.0848ZM58.6749%2017.2965H62.2703L60.4726%204.89437L58.6749%2017.2965ZM70.3392%2016.9367L65.6358%200.513413H69.5239L72.3668%2011.7092L75.2097%200.513413H78.7634L74.06%2016.9367V25.0848H70.3392V16.9367ZM88.1282%207.2859V25.0637H84.7836V0.513413H89.4452L93.2705%2015.2012V0.513413H96.5942V25.0637H92.7688L88.1282%207.2859ZM106.942%2025.0637C106.733%2024.4288%20106.607%2024.0478%20106.607%2022.0584V18.1854C106.607%2015.9208%20105.855%2015.0743%20104.182%2015.0743H102.886V25.0637H99.1654V0.513413H104.788C108.635%200.513413%20110.286%202.37585%20110.286%206.16421V8.09013C110.286%2010.6298%20109.513%2012.2594%20107.861%2013.0637C109.722%2013.8891%20110.328%2015.7303%20110.328%2018.2912V22.0795C110.328%2023.2859%20110.37%2024.1536%20110.725%2025.0637H106.942ZM102.886%204.02664V11.561H104.349C105.729%2011.561%20106.586%2010.9261%20106.586%208.97902V6.54516C106.586%204.78855%20106.001%204.02664%20104.684%204.02664H102.886ZM118.501%2011.3917H123.706V19.1801C123.706%2023.0954%20121.825%2025.36%20118.167%2025.36C114.509%2025.36%20112.627%2023.0954%20112.627%2019.1801V6.41818C112.627%202.48167%20114.509%200.238281%20118.167%200.238281C121.825%200.238281%20123.706%202.48167%20123.706%206.41818V8.78855H120.194V6.16421C120.194%204.40759%20119.463%203.75151%20118.271%203.75151C117.08%203.75151%20116.348%204.40759%20116.348%206.16421V19.4129C116.348%2021.1695%20117.08%2021.8044%20118.271%2021.8044C119.463%2021.8044%20120.194%2021.1695%20120.194%2019.4129V14.9049H118.501V11.3917Z'%20fill='white'/%3e%3c/svg%3e" alt="logo name">
+					</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu"></button>
+						<div class="menu__body">
+							<nav class="menu__nav">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link menu__link--icon-arrow-next">We offer</a>
+										<ul class="submenu">
+											<li class="submenu__item">
+												<a href="#" class="submenu__link submenu__link--icon-arrow-rotate">Service 1</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link submenu__link--icon-arrow-rotate">Service 2</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link submenu__link--icon-arrow-rotate">Service 3</a>
+											</li>
+											<li class="submenu__item">
+												<a href="#" class="submenu__link submenu__link--icon-arrow-rotate">Service 4</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Portfolio</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">About Us</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__actions">
+								<div class="languages">
+									<a href="#" class="languages__link active">DE</a>
+									<a href="#" class="languages__link">EN</a>
+								</div>
+								<a href="tel:+41 44 123 45 67" class="header__phone">+41 44 123 45 67</a>
+								<button class="button" type="button">
+									СONTACT US
+									<span class="icon-arrow icon-arrow--icon-arrow-rotate"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1747736586251on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--home">
+				<!-- hero  section -->
+				<section class="hero">
+					<div class="hero__banner">
+						<img src="./assets/img/hero01.jpg" alt="main banner" data-fls-image-ignore="">
+					</div>
+					<div class="hero__container">
+						<h1 class="hero__title">
+							INVEST IN SWISS SOLAR
+							<span class="text-decorated">AND STORAGE SYSTEM NOW</span>
+						</h1>
+					</div>
+				</section>
+				<!-- what-we-do  section -->
+				<section class="section what-we-do">
+					<div class="what-we-do__container">
+						<div class="section-title">What we do</div>
+						<div class="section-text">
+							We develop, build and operate renewable energy solutions, providing investment
+                opportunities for institutional,
+                commercial and private investors
+						</div>
+						<div class="what-we-do__tabs">
+							<div class="what-we-do__item">
+								<button type="button" class="what-we-do__title active">
+									<div class="tab-title">Development</div>
+									<div class="tab-text">
+										We lead Solar PV and Energy Storage projects from concept to
+                            execution,
+                            handling everything from site analysis to
+                            permitting with precision and expertise.
+									</div>
+								</button>
+								<div class="what-we-do__body">
+									<div class="what-we-do__images">
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs01-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs01-1200.webp" type="image/webp">
+												<img alt="tabs 01" src="./assets/img/tabs01.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs02-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs02-1200.webp" type="image/webp">
+												<img alt="tabs 02" src="./assets/img/tabs02.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs03-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs03-1200.webp" type="image/webp">
+												<img alt="tabs 03" src="./assets/img/tabs03.webp">
+											</picture>
+											<img src="data:image/svg+xml,%3csvg%20width='322'%20height='66'%20viewBox='0%200%20322%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_705_1607)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.0524%201.51149C23.2941%201.51149%2028.0485%207.23212%2028.0485%2017.2163V19.2131H19.0739V16.6226C19.0739%2012.1432%2017.3644%2010.4162%2014.3195%2010.4162C11.2745%2010.4162%209.56503%2012.1432%209.56503%2016.6226C9.56503%2029.467%2028.1554%2031.8956%2028.1554%2049.8131C28.1554%2059.7972%2023.2941%2065.5178%2013.9989%2065.5178C4.65034%2065.5178%20-0.210938%2059.7972%20-0.210938%2049.8131V45.9274H8.81714V50.4067C8.81714%2054.8861%2010.6869%2056.5051%2013.7318%2056.5051C16.7234%2056.5051%2018.6465%2054.8861%2018.6465%2050.4067C18.6465%2037.5623%200.0561654%2035.1337%200.0561654%2017.2163C0.0561654%207.23212%204.8106%201.51149%2014.0524%201.51149ZM43.5405%202.21307V50.5147C43.5405%2054.994%2045.4102%2056.6131%2048.4552%2056.6131C51.5002%2056.6131%2053.3699%2054.994%2053.3699%2050.5147V2.21307H62.3446V49.867C62.3446%2059.9051%2057.5367%2065.6258%2048.1881%2065.6258C38.8929%2065.6258%2034.0317%2059.9051%2034.0317%2049.867V2.21307H43.5405ZM77.1421%2019.4829V64.8163H68.5948V2.21307H80.5076L90.2301%2039.667V2.21307H98.724V64.8163H88.948L77.1421%2019.4829ZM118.596%201.51149C127.838%201.51149%20132.593%207.23212%20132.593%2017.2702V19.2131H123.618V16.6226C123.618%2012.1432%20121.855%2010.4702%20118.864%2010.4702C115.819%2010.4702%20114.109%2012.1432%20114.109%2016.6226C114.109%2029.521%20132.699%2031.8956%20132.699%2049.8131C132.699%2059.8512%20127.838%2065.5718%20118.49%2065.5718C109.194%2065.5718%20104.333%2059.8512%20104.333%2049.8131V45.9813H113.308V50.4607C113.308%2054.8861%20115.231%2056.5051%20118.276%2056.5051C121.267%2056.5051%20123.191%2054.8861%20123.191%2050.4607C123.191%2037.5623%20104.6%2035.1337%20104.6%2017.2702C104.6%207.23212%20109.355%201.51149%20118.596%201.51149ZM169.079%2064.8163H159.517L157.861%2053.4829H146.215L144.559%2064.8163H135.851L145.52%202.21307H159.41L169.079%2064.8163ZM147.39%2044.9559H156.578L151.984%2013.3305L147.39%2044.9559ZM177.199%2044.0385L165.179%202.15911H175.115L182.381%2030.7083L189.646%202.15911H198.727L186.708%2044.0385V64.8163H177.199V44.0385ZM222.66%2019.4289V64.7623H214.112V2.15911H226.025L235.801%2039.6131V2.15911H244.295V64.7623H234.519L222.66%2019.4289ZM270.738%2064.7623C270.204%2063.1432%20269.883%2062.1718%20269.883%2057.0988V47.2226C269.883%2041.448%20267.96%2039.2893%20263.687%2039.2893H260.375V64.7623H250.866V2.15911H265.236C275.065%202.15911%20279.285%206.90831%20279.285%2016.5686V21.4797C279.285%2027.9559%20277.309%2032.1115%20273.089%2034.1623C277.843%2036.267%20279.392%2040.9623%20279.392%2047.4924V57.1528C279.392%2060.229%20279.499%2062.4417%20280.407%2064.7623H270.738ZM260.375%2011.1178V30.3305H264.114C267.64%2030.3305%20269.83%2028.7115%20269.83%2023.7464V17.5401C269.83%2013.0607%20268.334%2011.1178%20264.969%2011.1178H260.375ZM300.28%2029.8988H313.582V49.7591C313.582%2059.7432%20308.774%2065.5178%20299.425%2065.5178C290.076%2065.5178%20285.269%2059.7432%20285.269%2049.7591V17.2163C285.269%207.17815%20290.076%201.45752%20299.425%201.45752C308.774%201.45752%20313.582%207.17815%20313.582%2017.2163V23.2607H304.607V16.5686C304.607%2012.0893%20302.737%2010.4162%20299.692%2010.4162C296.647%2010.4162%20294.777%2012.0893%20294.777%2016.5686V50.3528C294.777%2054.8321%20296.647%2056.4512%20299.692%2056.4512C302.737%2056.4512%20304.607%2054.8321%20304.607%2050.3528V38.8575H300.28V29.8988Z'%20fill='%23B1B3B4'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_705_1607'%3e%3crect%20width='322'%20height='66'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="logo-navbar">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="what-we-do__item">
+								<button type="button" class="what-we-do__title">
+									<div class="tab-title">Construction</div>
+									<div class="tab-text">
+										By partnering with trusted local installers, we ensure the
+                            construction of
+                            high-quality, dependable systems tailored to
+                            each project's needs.
+									</div>
+								</button>
+								<div class="what-we-do__body">
+									<div class="what-we-do__images">
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs02-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs02-1200.webp" type="image/webp">
+												<img alt="tabs 01" src="./assets/img/tabs02.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs01-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs01-1200.webp" type="image/webp">
+												<img alt="tabs 02" src="./assets/img/tabs01.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs03-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs03-1200.webp" type="image/webp">
+												<img alt="tabs 03" src="./assets/img/tabs03.webp">
+											</picture>
+											<img src="data:image/svg+xml,%3csvg%20width='322'%20height='66'%20viewBox='0%200%20322%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_705_1607)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.0524%201.51149C23.2941%201.51149%2028.0485%207.23212%2028.0485%2017.2163V19.2131H19.0739V16.6226C19.0739%2012.1432%2017.3644%2010.4162%2014.3195%2010.4162C11.2745%2010.4162%209.56503%2012.1432%209.56503%2016.6226C9.56503%2029.467%2028.1554%2031.8956%2028.1554%2049.8131C28.1554%2059.7972%2023.2941%2065.5178%2013.9989%2065.5178C4.65034%2065.5178%20-0.210938%2059.7972%20-0.210938%2049.8131V45.9274H8.81714V50.4067C8.81714%2054.8861%2010.6869%2056.5051%2013.7318%2056.5051C16.7234%2056.5051%2018.6465%2054.8861%2018.6465%2050.4067C18.6465%2037.5623%200.0561654%2035.1337%200.0561654%2017.2163C0.0561654%207.23212%204.8106%201.51149%2014.0524%201.51149ZM43.5405%202.21307V50.5147C43.5405%2054.994%2045.4102%2056.6131%2048.4552%2056.6131C51.5002%2056.6131%2053.3699%2054.994%2053.3699%2050.5147V2.21307H62.3446V49.867C62.3446%2059.9051%2057.5367%2065.6258%2048.1881%2065.6258C38.8929%2065.6258%2034.0317%2059.9051%2034.0317%2049.867V2.21307H43.5405ZM77.1421%2019.4829V64.8163H68.5948V2.21307H80.5076L90.2301%2039.667V2.21307H98.724V64.8163H88.948L77.1421%2019.4829ZM118.596%201.51149C127.838%201.51149%20132.593%207.23212%20132.593%2017.2702V19.2131H123.618V16.6226C123.618%2012.1432%20121.855%2010.4702%20118.864%2010.4702C115.819%2010.4702%20114.109%2012.1432%20114.109%2016.6226C114.109%2029.521%20132.699%2031.8956%20132.699%2049.8131C132.699%2059.8512%20127.838%2065.5718%20118.49%2065.5718C109.194%2065.5718%20104.333%2059.8512%20104.333%2049.8131V45.9813H113.308V50.4607C113.308%2054.8861%20115.231%2056.5051%20118.276%2056.5051C121.267%2056.5051%20123.191%2054.8861%20123.191%2050.4607C123.191%2037.5623%20104.6%2035.1337%20104.6%2017.2702C104.6%207.23212%20109.355%201.51149%20118.596%201.51149ZM169.079%2064.8163H159.517L157.861%2053.4829H146.215L144.559%2064.8163H135.851L145.52%202.21307H159.41L169.079%2064.8163ZM147.39%2044.9559H156.578L151.984%2013.3305L147.39%2044.9559ZM177.199%2044.0385L165.179%202.15911H175.115L182.381%2030.7083L189.646%202.15911H198.727L186.708%2044.0385V64.8163H177.199V44.0385ZM222.66%2019.4289V64.7623H214.112V2.15911H226.025L235.801%2039.6131V2.15911H244.295V64.7623H234.519L222.66%2019.4289ZM270.738%2064.7623C270.204%2063.1432%20269.883%2062.1718%20269.883%2057.0988V47.2226C269.883%2041.448%20267.96%2039.2893%20263.687%2039.2893H260.375V64.7623H250.866V2.15911H265.236C275.065%202.15911%20279.285%206.90831%20279.285%2016.5686V21.4797C279.285%2027.9559%20277.309%2032.1115%20273.089%2034.1623C277.843%2036.267%20279.392%2040.9623%20279.392%2047.4924V57.1528C279.392%2060.229%20279.499%2062.4417%20280.407%2064.7623H270.738ZM260.375%2011.1178V30.3305H264.114C267.64%2030.3305%20269.83%2028.7115%20269.83%2023.7464V17.5401C269.83%2013.0607%20268.334%2011.1178%20264.969%2011.1178H260.375ZM300.28%2029.8988H313.582V49.7591C313.582%2059.7432%20308.774%2065.5178%20299.425%2065.5178C290.076%2065.5178%20285.269%2059.7432%20285.269%2049.7591V17.2163C285.269%207.17815%20290.076%201.45752%20299.425%201.45752C308.774%201.45752%20313.582%207.17815%20313.582%2017.2163V23.2607H304.607V16.5686C304.607%2012.0893%20302.737%2010.4162%20299.692%2010.4162C296.647%2010.4162%20294.777%2012.0893%20294.777%2016.5686V50.3528C294.777%2054.8321%20296.647%2056.4512%20299.692%2056.4512C302.737%2056.4512%20304.607%2054.8321%20304.607%2050.3528V38.8575H300.28V29.8988Z'%20fill='%23B1B3B4'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_705_1607'%3e%3crect%20width='322'%20height='66'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="logo-navbar">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="what-we-do__item">
+								<button type="button" class="what-we-do__title">
+									<div class="tab-title">Operations</div>
+									<div class="tab-text">
+										Our team oversees and optimizes system performance, maximizing
+                            long-term
+                            value, efficiency, and impact.
+									</div>
+								</button>
+								<div class="what-we-do__body">
+									<div class="what-we-do__images">
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs03-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs03-1200.webp" type="image/webp">
+												<img alt="tabs 01" src="./assets/img/tabs03.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs02-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs02-1200.webp" type="image/webp">
+												<img alt="tabs 02" src="./assets/img/tabs02.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs01-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs01-1200.webp" type="image/webp">
+												<img alt="tabs 03" src="./assets/img/tabs01.webp">
+											</picture>
+											<img src="data:image/svg+xml,%3csvg%20width='322'%20height='66'%20viewBox='0%200%20322%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_705_1607)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.0524%201.51149C23.2941%201.51149%2028.0485%207.23212%2028.0485%2017.2163V19.2131H19.0739V16.6226C19.0739%2012.1432%2017.3644%2010.4162%2014.3195%2010.4162C11.2745%2010.4162%209.56503%2012.1432%209.56503%2016.6226C9.56503%2029.467%2028.1554%2031.8956%2028.1554%2049.8131C28.1554%2059.7972%2023.2941%2065.5178%2013.9989%2065.5178C4.65034%2065.5178%20-0.210938%2059.7972%20-0.210938%2049.8131V45.9274H8.81714V50.4067C8.81714%2054.8861%2010.6869%2056.5051%2013.7318%2056.5051C16.7234%2056.5051%2018.6465%2054.8861%2018.6465%2050.4067C18.6465%2037.5623%200.0561654%2035.1337%200.0561654%2017.2163C0.0561654%207.23212%204.8106%201.51149%2014.0524%201.51149ZM43.5405%202.21307V50.5147C43.5405%2054.994%2045.4102%2056.6131%2048.4552%2056.6131C51.5002%2056.6131%2053.3699%2054.994%2053.3699%2050.5147V2.21307H62.3446V49.867C62.3446%2059.9051%2057.5367%2065.6258%2048.1881%2065.6258C38.8929%2065.6258%2034.0317%2059.9051%2034.0317%2049.867V2.21307H43.5405ZM77.1421%2019.4829V64.8163H68.5948V2.21307H80.5076L90.2301%2039.667V2.21307H98.724V64.8163H88.948L77.1421%2019.4829ZM118.596%201.51149C127.838%201.51149%20132.593%207.23212%20132.593%2017.2702V19.2131H123.618V16.6226C123.618%2012.1432%20121.855%2010.4702%20118.864%2010.4702C115.819%2010.4702%20114.109%2012.1432%20114.109%2016.6226C114.109%2029.521%20132.699%2031.8956%20132.699%2049.8131C132.699%2059.8512%20127.838%2065.5718%20118.49%2065.5718C109.194%2065.5718%20104.333%2059.8512%20104.333%2049.8131V45.9813H113.308V50.4607C113.308%2054.8861%20115.231%2056.5051%20118.276%2056.5051C121.267%2056.5051%20123.191%2054.8861%20123.191%2050.4607C123.191%2037.5623%20104.6%2035.1337%20104.6%2017.2702C104.6%207.23212%20109.355%201.51149%20118.596%201.51149ZM169.079%2064.8163H159.517L157.861%2053.4829H146.215L144.559%2064.8163H135.851L145.52%202.21307H159.41L169.079%2064.8163ZM147.39%2044.9559H156.578L151.984%2013.3305L147.39%2044.9559ZM177.199%2044.0385L165.179%202.15911H175.115L182.381%2030.7083L189.646%202.15911H198.727L186.708%2044.0385V64.8163H177.199V44.0385ZM222.66%2019.4289V64.7623H214.112V2.15911H226.025L235.801%2039.6131V2.15911H244.295V64.7623H234.519L222.66%2019.4289ZM270.738%2064.7623C270.204%2063.1432%20269.883%2062.1718%20269.883%2057.0988V47.2226C269.883%2041.448%20267.96%2039.2893%20263.687%2039.2893H260.375V64.7623H250.866V2.15911H265.236C275.065%202.15911%20279.285%206.90831%20279.285%2016.5686V21.4797C279.285%2027.9559%20277.309%2032.1115%20273.089%2034.1623C277.843%2036.267%20279.392%2040.9623%20279.392%2047.4924V57.1528C279.392%2060.229%20279.499%2062.4417%20280.407%2064.7623H270.738ZM260.375%2011.1178V30.3305H264.114C267.64%2030.3305%20269.83%2028.7115%20269.83%2023.7464V17.5401C269.83%2013.0607%20268.334%2011.1178%20264.969%2011.1178H260.375ZM300.28%2029.8988H313.582V49.7591C313.582%2059.7432%20308.774%2065.5178%20299.425%2065.5178C290.076%2065.5178%20285.269%2059.7432%20285.269%2049.7591V17.2163C285.269%207.17815%20290.076%201.45752%20299.425%201.45752C308.774%201.45752%20313.582%207.17815%20313.582%2017.2163V23.2607H304.607V16.5686C304.607%2012.0893%20302.737%2010.4162%20299.692%2010.4162C296.647%2010.4162%20294.777%2012.0893%20294.777%2016.5686V50.3528C294.777%2054.8321%20296.647%2056.4512%20299.692%2056.4512C302.737%2056.4512%20304.607%2054.8321%20304.607%2050.3528V38.8575H300.28V29.8988Z'%20fill='%23B1B3B4'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_705_1607'%3e%3crect%20width='322'%20height='66'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="logo-navbar">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="what-we-do__item">
+								<button type="button" class="what-we-do__title">
+									<div class="tab-title">Advisory</div>
+									<div class="tab-text">
+										We provide expert advisory services, supporting clients with
+                            feasibility
+                            studies, project planning, energy audits, and
+                            climate impact assessments.
+									</div>
+								</button>
+								<div class="what-we-do__body">
+									<div class="what-we-do__images">
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs01-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs01-1200.webp" type="image/webp">
+												<img alt="tabs 01" src="./assets/img/tabs01.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs03-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs03-1200.webp" type="image/webp">
+												<img alt="tabs 02" src="./assets/img/tabs03.webp">
+											</picture>
+										</div>
+										<div class="img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/tabs02-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/tabs02-1200.webp" type="image/webp">
+												<img alt="tabs 03" src="./assets/img/tabs02.webp">
+											</picture>
+											<img src="data:image/svg+xml,%3csvg%20width='322'%20height='66'%20viewBox='0%200%20322%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_705_1607)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M14.0524%201.51149C23.2941%201.51149%2028.0485%207.23212%2028.0485%2017.2163V19.2131H19.0739V16.6226C19.0739%2012.1432%2017.3644%2010.4162%2014.3195%2010.4162C11.2745%2010.4162%209.56503%2012.1432%209.56503%2016.6226C9.56503%2029.467%2028.1554%2031.8956%2028.1554%2049.8131C28.1554%2059.7972%2023.2941%2065.5178%2013.9989%2065.5178C4.65034%2065.5178%20-0.210938%2059.7972%20-0.210938%2049.8131V45.9274H8.81714V50.4067C8.81714%2054.8861%2010.6869%2056.5051%2013.7318%2056.5051C16.7234%2056.5051%2018.6465%2054.8861%2018.6465%2050.4067C18.6465%2037.5623%200.0561654%2035.1337%200.0561654%2017.2163C0.0561654%207.23212%204.8106%201.51149%2014.0524%201.51149ZM43.5405%202.21307V50.5147C43.5405%2054.994%2045.4102%2056.6131%2048.4552%2056.6131C51.5002%2056.6131%2053.3699%2054.994%2053.3699%2050.5147V2.21307H62.3446V49.867C62.3446%2059.9051%2057.5367%2065.6258%2048.1881%2065.6258C38.8929%2065.6258%2034.0317%2059.9051%2034.0317%2049.867V2.21307H43.5405ZM77.1421%2019.4829V64.8163H68.5948V2.21307H80.5076L90.2301%2039.667V2.21307H98.724V64.8163H88.948L77.1421%2019.4829ZM118.596%201.51149C127.838%201.51149%20132.593%207.23212%20132.593%2017.2702V19.2131H123.618V16.6226C123.618%2012.1432%20121.855%2010.4702%20118.864%2010.4702C115.819%2010.4702%20114.109%2012.1432%20114.109%2016.6226C114.109%2029.521%20132.699%2031.8956%20132.699%2049.8131C132.699%2059.8512%20127.838%2065.5718%20118.49%2065.5718C109.194%2065.5718%20104.333%2059.8512%20104.333%2049.8131V45.9813H113.308V50.4607C113.308%2054.8861%20115.231%2056.5051%20118.276%2056.5051C121.267%2056.5051%20123.191%2054.8861%20123.191%2050.4607C123.191%2037.5623%20104.6%2035.1337%20104.6%2017.2702C104.6%207.23212%20109.355%201.51149%20118.596%201.51149ZM169.079%2064.8163H159.517L157.861%2053.4829H146.215L144.559%2064.8163H135.851L145.52%202.21307H159.41L169.079%2064.8163ZM147.39%2044.9559H156.578L151.984%2013.3305L147.39%2044.9559ZM177.199%2044.0385L165.179%202.15911H175.115L182.381%2030.7083L189.646%202.15911H198.727L186.708%2044.0385V64.8163H177.199V44.0385ZM222.66%2019.4289V64.7623H214.112V2.15911H226.025L235.801%2039.6131V2.15911H244.295V64.7623H234.519L222.66%2019.4289ZM270.738%2064.7623C270.204%2063.1432%20269.883%2062.1718%20269.883%2057.0988V47.2226C269.883%2041.448%20267.96%2039.2893%20263.687%2039.2893H260.375V64.7623H250.866V2.15911H265.236C275.065%202.15911%20279.285%206.90831%20279.285%2016.5686V21.4797C279.285%2027.9559%20277.309%2032.1115%20273.089%2034.1623C277.843%2036.267%20279.392%2040.9623%20279.392%2047.4924V57.1528C279.392%2060.229%20279.499%2062.4417%20280.407%2064.7623H270.738ZM260.375%2011.1178V30.3305H264.114C267.64%2030.3305%20269.83%2028.7115%20269.83%2023.7464V17.5401C269.83%2013.0607%20268.334%2011.1178%20264.969%2011.1178H260.375ZM300.28%2029.8988H313.582V49.7591C313.582%2059.7432%20308.774%2065.5178%20299.425%2065.5178C290.076%2065.5178%20285.269%2059.7432%20285.269%2049.7591V17.2163C285.269%207.17815%20290.076%201.45752%20299.425%201.45752C308.774%201.45752%20313.582%207.17815%20313.582%2017.2163V23.2607H304.607V16.5686C304.607%2012.0893%20302.737%2010.4162%20299.692%2010.4162C296.647%2010.4162%20294.777%2012.0893%20294.777%2016.5686V50.3528C294.777%2054.8321%20296.647%2056.4512%20299.692%2056.4512C302.737%2056.4512%20304.607%2054.8321%20304.607%2050.3528V38.8575H300.28V29.8988Z'%20fill='%23B1B3B4'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_705_1607'%3e%3crect%20width='322'%20height='66'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="logo-navbar">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- WHY  section -->
+				<section class="section why">
+					<div class="why__img">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/why-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/why-1200.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/why.webp">
+						</picture>
+					</div>
+					<div class="why__container">
+						<h2 class="why__title title">
+							<span>WHY</span>
+							invest in renewables
+						</h2>
+						<div class="why__text section-text">
+							Renewable energy is more than a climate solution — it's a smart,
+                future-proof
+                investment.
+						</div>
+						<button class="button" type="button">
+							СONTACT US
+							<span class="icon-arrow icon-arrow--icon-arrow-rotate"></span>
+						</button>
+						<div class="utp">
+							<div class="utp-item">
+								<div class="utp-item__icon --icon-energy"></div>
+								<div class="utp-item__content">
+									<div class="utp-item__title">Clean energy</div>
+									<div class="utp-item__text">
+										Renewables reduce emissions, fight pollution, and power the global
+                            shift to a low-carbon future.
+									</div>
+								</div>
+							</div>
+							<div class="utp-item">
+								<div class="utp-item__icon --icon-solar-panel"></div>
+								<div class="utp-item__content">
+									<div class="utp-item__title">Proven Technology</div>
+									<div class="utp-item__text">
+										Established and reliable technologies reduce uncertainty and
+                            guarantee investment returns.
+									</div>
+								</div>
+							</div>
+							<div class="utp-item">
+								<div class="utp-item__icon --icon-money"></div>
+								<div class="utp-item__content">
+									<div class="utp-item__title">Stable returns</div>
+									<div class="utp-item__text">
+										Reliable contracts and incentives make renewables financially
+                            predictable with reduced long-term risk.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- our-projects  section -->
+				<section class="section our-projects">
+					<div class="our-projects__container">
+						<h2 class="section-title">OUr PROJECTS</h2>
+						<div class="section-text">
+							With over seven years of experience, we have developed more than 70 commercial renewable energy projects
+                across Europe,
+                partnering with area owners and utilities to advance sustainable growth. Our proven track record equips
+                us to support
+                Switzerland’s energy transition.
+						</div>
+						<div class="projects">
+							<div class="projects__list">
+								<div class="project">
+									<a href="#" class="project__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/project01-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/project01-1200.webp" type="image/webp">
+											<img alt="project img" src="./assets/img/project01.webp">
+										</picture>
+										<div class="arrow-link arrow-link--icon-arrow-rotate"></div>
+									</a>
+									<div class="project__content">
+										<p class="project__text">
+											A solar power plant designed for high performance and long-term value. While a
+                    portion of the energy supports the
+                    shopping mall’s daily operations, 70% is fed into the grid — creating a reliable revenue stream.
+                    Strategically
+                    positioned to deliver strong energy output and commercial returns, the project strikes the perfect
+                    balance between
+                    sustainability and profitability. A true win for every stakeholder involved.
+										</p>
+										<div class="project__utp">
+											<div class="project__info">
+												<div class="project__key">2,3 MW</div>
+												<div class="project__value">Capacity</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">48 375 м2</div>
+												<div class="project__value">Station Area</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">2 359 620 kWh</div>
+												<div class="project__value">Annual Generation</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="project">
+									<a href="#" class="project__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/project02-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/project02-1200.webp" type="image/webp">
+											<img alt="project img" src="./assets/img/project02.webp">
+										</picture>
+										<div class="arrow-link arrow-link--icon-arrow-rotate"></div>
+									</a>
+									<div class="project__content">
+										<p class="project__text">
+											The first phase of this solar installation was seamlessly integrated during the
+                    logistics center’s construction. The
+                    project was delivered on time and met all key performance and quality standards. Looking ahead,
+                    planned expansions will
+                    make full use of the available rooftop space — boosting energy output and long-term value.
+										</p>
+										<div class="project__utp">
+											<div class="project__info">
+												<div class="project__key">1,4 MW</div>
+												<div class="project__value">Capacity</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">30 440 м2</div>
+												<div class="project__value">Station Area</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">653 130 kWh</div>
+												<div class="project__value">Annual Generation</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="project">
+									<a href="#" class="project__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/project03-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/project03-1200.webp" type="image/webp">
+											<img alt="project img" src="./assets/img/project03.webp">
+										</picture>
+										<div class="arrow-link arrow-link--icon-arrow-rotate"></div>
+									</a>
+									<div class="project__content">
+										<p class="project__text">
+											This solar power plant was integrated during the construction phase of the
+                    center. While the rooftop hosts a
+                    conventional solar array, the facade showcases an innovative vertical panel system — harnessing
+                    solar energy from
+                    surfaces often overlooked. The result: expanded generation capacity and a bold step in architectural
+                    solar design.
+										</p>
+										<div class="project__utp">
+											<div class="project__info">
+												<div class="project__key">2,7 MW</div>
+												<div class="project__value">Capacity</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">46 950 м2</div>
+												<div class="project__value">Station Area</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">4 455 434 kWh</div>
+												<div class="project__value">Annual Generation</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="project">
+									<a href="#" class="project__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/project04-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/project04-1200.webp" type="image/webp">
+											<img alt="project img" src="./assets/img/project04.webp">
+										</picture>
+										<div class="arrow-link arrow-link--icon-arrow-rotate"></div>
+									</a>
+									<div class="project__content">
+										<p class="project__text">
+											This commercial-scale energy storage system features a 400 kWh capacity, paired
+                    with a 500 kWp solar generator. At the
+                    heart of the project is an advanced Energy Management System (EMS), which intelligently coordinates
+                    energy sources to
+                    maintain system stability. Even during peak loads, the EMS ensures smooth transitions and
+                    uninterrupted operation —
+                    delivering reliable performance when it matters most.
+										</p>
+										<div class="project__utp">
+											<div class="project__info">
+												<div class="project__key">310 kW</div>
+												<div class="project__value">Capacity</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">2x100 kW</div>
+												<div class="project__value">Power Storage</div>
+											</div>
+											<div class="project__info">
+												<div class="project__key">2x193.5 kWh</div>
+												<div class="project__value">Capacity Storage</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="button" href="#">
+							ALL PROJECTS
+							<span class="icon-arrow icon-arrow--icon-arrow-rotate"></span>
+						</a>
+					</div>
+				</section>
+				<!-- why-choose  section -->
+				<section class="section why-choose">
+					<div class="why-choose__bg">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/why03-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/why03-1200.webp" type="image/webp">
+							<img alt="why-choose Image" src="./assets/img/why03.webp">
+						</picture>
+					</div>
+					<div class="why-choose__container">
+						<div class="section-title">Why Choose Us</div>
+						<div class="section-text">
+							Switzerland’s energy future depends on smart investments in renewables. With a
+                focus on innovation and sustainability,
+                SUNSAY NRG plays a key role in shaping this transition.
+						</div>
+						<div class="why-choose__wrap">
+							<div class="why-choose__logo">
+								<span></span>
+								<img src="data:image/svg+xml,%3csvg%20width='248'%20height='160'%20viewBox='0%200%20248%20160'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M11.2727%20109.343C18.5768%20109.343%2022.3344%20113.863%2022.3344%20121.751V123.329H15.2414V121.282C15.2414%20117.743%2013.8904%20116.379%2011.4838%20116.379C9.0773%20116.379%207.72625%20117.743%207.72625%20121.282C7.72625%20131.431%2022.4188%20133.35%2022.4188%20147.506C22.4188%20155.395%2018.5768%20159.915%2011.2305%20159.915C3.84202%20159.915%200%20155.395%200%20147.506V144.436H7.13518V147.975C7.13518%20151.514%208.61287%20152.794%2011.0194%20152.794C13.3837%20152.794%2014.9036%20151.514%2014.9036%20147.975C14.9036%20137.827%200.2111%20135.908%200.2111%20121.751C0.2111%20113.863%203.96868%20109.343%2011.2727%20109.343ZM34.5781%20109.897V148.061C34.5781%20151.6%2036.0558%20152.879%2038.4624%20152.879C40.8689%20152.879%2042.3466%20151.6%2042.3466%20148.061V109.897H49.4396V147.549C49.4396%20155.48%2045.6398%20160%2038.2513%20160C30.905%20160%2027.063%20155.48%2027.063%20147.549V109.897H34.5781ZM61.1345%20123.542V159.36H54.3793V109.897H63.7943L71.4784%20139.49V109.897H78.1914V159.36H70.4651L61.1345%20123.542ZM93.8972%20109.343C101.201%20109.343%20104.959%20113.863%20104.959%20121.794V123.329H97.8659V121.282C97.8659%20117.743%2096.4726%20116.421%2094.1083%20116.421C91.7017%20116.421%2090.3507%20117.743%2090.3507%20121.282C90.3507%20131.473%20105.043%20133.35%20105.043%20147.506C105.043%20155.437%20101.201%20159.957%2093.8127%20159.957C86.4665%20159.957%2082.6245%20155.437%2082.6245%20147.506V144.479H89.7174V148.018C89.7174%20151.514%2091.2373%20152.794%2093.6439%20152.794C96.0082%20152.794%2097.5281%20151.514%2097.5281%20148.018C97.5281%20137.827%2082.8355%20135.908%2082.8355%20121.794C82.8355%20113.863%2086.5931%20109.343%2093.8972%20109.343ZM133.795%20159.36H126.238L124.929%20150.406H115.725L114.416%20159.36H107.534L115.176%20109.897H126.153L133.795%20159.36ZM116.654%20143.669H123.916L120.285%20118.681L116.654%20143.669ZM140.212%20142.944L130.713%20109.855H138.566L144.308%20132.411L150.05%20109.855H157.227L147.728%20142.944V159.36H140.212V142.944ZM176.142%20123.5V159.318H169.386V109.855H178.802L186.528%20139.447V109.855H193.241V159.318H185.514L176.142%20123.5ZM214.14%20159.318C213.717%20158.038%20213.464%20157.271%20213.464%20153.263V145.459C213.464%20140.897%20211.944%20139.191%20208.567%20139.191H205.949V159.318H198.434V109.855H209.791C217.559%20109.855%20220.895%20113.607%20220.895%20121.24V125.12C220.895%20130.237%20219.333%20133.52%20215.997%20135.14C219.755%20136.803%20220.979%20140.513%20220.979%20145.673V153.305C220.979%20155.736%20221.064%20157.484%20221.781%20159.318H214.14ZM205.949%20116.933V132.113H208.904C211.691%20132.113%20213.422%20130.834%20213.422%20126.911V122.007C213.422%20118.468%20212.24%20116.933%20209.58%20116.933H205.949ZM237.487%20131.772H248V147.464C248%20155.352%20244.2%20159.915%20236.812%20159.915C229.423%20159.915%20225.623%20155.352%20225.623%20147.464V121.751C225.623%20113.82%20229.423%20109.3%20236.812%20109.3C244.2%20109.3%20248%20113.82%20248%20121.751V126.527H240.907V121.24C240.907%20117.7%20239.429%20116.379%20237.023%20116.379C234.616%20116.379%20233.139%20117.7%20233.139%20121.24V147.933C233.139%20151.472%20234.616%20152.751%20237.023%20152.751C239.429%20152.751%20240.907%20151.472%20240.907%20147.933V138.85H237.487V131.772Z'%20fill='%23141414'/%3e%3cpath%20d='M116.94%2014.5019C124.883%206.35595%20137.801%206.35595%20145.786%2014.5019L151.556%208.58536C140.393%20-2.86179%20122.291%20-2.86179%20111.128%208.58536C99.9659%2020.0325%2099.9659%2038.5966%20111.128%2050.0437L116.94%2044.1272C108.954%2035.9385%20108.954%2022.6906%20116.94%2014.5019ZM134.248%2026.3777L128.478%2032.2942C136.422%2040.4401%20136.422%2053.7308%20128.478%2061.8767C120.493%2070.0655%20107.575%2070.0655%2099.5897%2061.8767L93.8203%2067.7932C104.983%2079.2404%20123.085%2079.2404%20134.248%2067.7932C145.41%2056.3461%20145.41%2037.782%20134.248%2026.3777Z'%20fill='white'/%3e%3c/svg%3e" alt="logo">
+							</div>
+							<ul class="why-choose__list">
+								<li class="why-choose__item item-why-choose">
+									<div class="item-why-choose__wrap">
+										<div class="item-why-choose__title">
+											<span>INTERNATIONAL</span>
+											expertise
+										</div>
+										<div class="item-why-choose__text">
+											SUNSAY NRG develops innovative Solar PV and Energy
+                                Storage projects using advanced global expertise.
+										</div>
+									</div>
+								</li>
+								<li class="why-choose__item item-why-choose">
+									<div class="item-why-choose__wrap">
+										<div class="item-why-choose__title">
+											<span>swiss</span>
+											market insight
+										</div>
+										<div class="item-why-choose__text">
+											We tailor solutions to local regulations and energy
+                                demands, ensuring compliance and maximum impact.
+										</div>
+									</div>
+								</li>
+								<li class="why-choose__item item-why-choose">
+									<div class="item-why-choose__wrap">
+										<div class="item-why-choose__title">
+											<span>Driving</span>
+											Operational Excellence
+										</div>
+										<div class="item-why-choose__text">
+											We drive operational excellence through digital tools and
+                                streamlined processes, maximizing performance and long-term
+                                sustainability.
+										</div>
+									</div>
+								</li>
+								<li class="why-choose__item item-why-choose">
+									<div class="item-why-choose__wrap">
+										<div class="item-why-choose__title">
+											<span>Environmental</span>
+											Responsibility
+										</div>
+										<div class="item-why-choose__text">
+											We combine smart processes with eco-conscious practices
+                                to deliver lasting value and reduce environmental impact.
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- advantages  section -->
+				<section class="section advantages">
+					<div class="advantages__container">
+						<h2 class="section-title">Our Strategic Advantages</h2>
+						<div class="section-text">
+							Innovative solutions, trusted expertise, and sustainable performance that create
+                long-term value for partners and
+                investors alike.
+						</div>
+						<div class="advantages__grid">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/adventages01-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/adventages01-1200.webp" type="image/webp">
+										<img alt="adventages" src="./assets/img/adventages01.webp">
+									</picture>
+								</div>
+								<div class="item-advantages__number title">7+</div>
+								<div class="item-advantages__text">years of experience</div>
+							</div>
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/advantages02-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/advantages02-1200.webp" type="image/webp">
+										<img alt="adventages" src="./assets/img/advantages02.webp">
+									</picture>
+								</div>
+								<div class="item-advantages__number title">70+</div>
+								<div class="item-advantages__text">completed projects</div>
+							</div>
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/adventages03-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/adventages03-1200.webp" type="image/webp">
+										<img alt="adventages" src="./assets/img/adventages03.webp">
+									</picture>
+								</div>
+								<div class="item-advantages__number title">
+									<span>c&I</span>
+									expertise
+								</div>
+								<div class="item-advantages__text">
+									Our team brings deep Commercial & Industrial (C&I) expertise,
+                        delivering tailored renewable solutions that meet the
+                        complex energy needs of businesses and industrial facilities.
+								</div>
+							</div>
+						</div>
+						<div data-fls-spollers="" class="spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Turnkey solar and BESS solutions
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									We handle everything from planning to operation, ensuring a smooth
+                        investment process.
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Smart use of space
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi
+                        enim ratione vitae aut, rem nemo tempore praesentium quod minus, maxime veritatis quos vel
+                        quidem, quasi quae. Officia, et sapiente!
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Low-risk, future-proof investment
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi
+                        enim ratione vitae aut, rem nemo tempore praesentium quod minus, maxime veritatis quos vel
+                        quidem, quasi quae. Officia, et sapiente!
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Strong industry partnerships
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi
+                        enim ratione vitae aut, rem nemo tempore praesentium quod minus, maxime veritatis quos vel
+                        quidem, quasi quae. Officia, et sapiente!
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Zero-cost solar for property owners
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi
+                        enim ratione vitae aut, rem nemo tempore praesentium quod minus, maxime veritatis quos vel
+                        quidem, quasi quae. Officia, et sapiente!
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Eco-friendly & sustainable focus
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi
+                        enim ratione vitae aut, rem nemo tempore praesentium quod minus, maxime veritatis quos vel
+                        quidem, quasi quae. Officia, et sapiente!
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">
+									Flexible & innovative solutions
+									<div class="spollers__icon"></div>
+								</summary>
+								<div class="spollers__body">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi
+                        enim ratione vitae aut, rem nemo tempore praesentium quod minus, maxime veritatis quos vel
+                        quidem, quasi quae. Officia, et sapiente!
+								</div>
+							</details>
+						</div>
+					</div>
+				</section>
+				<!-- banner  section -->
+				<section class="section banner">
+					<div class="banner__img">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/why02-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/why02-1200.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/why02.webp">
+						</picture>
+					</div>
+					<div class="banner__content">
+						<h2 class="title">
+							Let’s discuss your energy
+							<span class="text-decorated">project in more detail</span>
+						</h2>
+						<button class="button" type="button">
+							СONTACT US
+							<span class="icon-arrow icon-arrow--icon-arrow-rotate"></span>
+						</button>
+					</div>
+				</section>
+				<!-- how-we-work  section -->
+				<section class="section how-we-work">
+					<div class="how-we-work__container">
+						<h2 class="section-title">HOW WE WORK</h2>
+						<div class="section-text">
+							We provide end-to-end renewable energy project management, from feasibility
+                analysis to implementation, offering
+                flexibility for clients to engage at any stage.
+						</div>
+						<ul class="how-we-work__list">
+							<li class="how-we-work__item">
+								<div class="how-we-work__title">Feasibility Analysis</div>
+								<div class="how-we-work__text">
+									We assess roofs land, resources, and project viability early,
+                        blending design, financial modeling, and environmental
+                        impact to inform strategic development decisions.
+								</div>
+							</li>
+							<li class="how-we-work__item">
+								<div class="how-we-work__title">Design Development</div>
+								<div class="how-we-work__text">
+									We create efficient solar designs, ensure grid and regulatory
+                        compliance, and lead permitting through environmental
+                        assessments and active stakeholder collaboration.
+								</div>
+							</li>
+							<li class="how-we-work__item">
+								<div class="how-we-work__title">Investment Structuring</div>
+								<div class="how-we-work__text">
+									We craft financing models, lead tender processes, and secure EPC
+                        contracts that drive transparency, cost-efficiency, and
+                        bankable project execution strategies.
+								</div>
+							</li>
+							<li class="how-we-work__item">
+								<div class="how-we-work__title">Implementation Management</div>
+								<div class="how-we-work__text">
+									We manage construction, quality control, and commissioning while
+                        optimizing long-term performance for dependable energy
+                        output and asset value retention.
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- main-form  section -->
+				<section class="section main-form">
+					<div class="main-form__bg">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/form-bg-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/form-bg-1200.webp" type="image/webp">
+							<img alt="form bg" src="./assets/img/form-bg.webp">
+						</picture>
+					</div>
+					<div class="main-form__container">
+						<div class="main-form__col">
+							<h2 class="title">
+								Discover the power of
+								<span class="text-decorated">Solar today!</span>
+							</h2>
+						</div>
+						<div class="main-form__col">
+							<form class="form" action="#" method="POST">
+								<h3 class="form__title">
+									Complete the form, and our experts will craft a custom solar plan just for
+                        you!
+								</h3>
+								<div class="form__row">
+									<div class="form-group">
+										<label for="name">Name</label>
+										<!-- <input id="name" type="text" name="form[]" placeholder="Name" class="input" required> -->
+										<input data-fls-input="" autocomplete="off" id="name" type="text" name="form[]" data-error="Помилка" placeholder="Name" class="input">
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone</label>
+										<!--
+<input id="phone" type="phone" name="form[]" placeholder="+41 00 000 00 00" class="input"
+required>
+-->
+										<input data-fls-input="" autocomplete="off" id="phone" type="phone" name="form[]" data-error="Помилка" placeholder="+41 00 000 00 00" class="input">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">
+										Email
+										<span class="required">*</span>
+									</label>
+									<!--
+<input id="email" type="email" name="form[]" placeholder="mail@gmail.com" class="input"
+required>
+-->
+									<input data-fls-input="" autocomplete="off" id="email" type="email" name="form[]" data-error="Помилка" placeholder="mail@gmail.com" class="input" required>
+								</div>
+								<div class="form-group">
+									<label for="message">Message</label>
+									<!--
+<textarea name="message" id="message" class="input" placeholder="Your message"
+required></textarea>
+-->
+									<textarea data-fls-input="" autocomplete="off" id="message" name="form[]" placeholder="Your message" data-error="Помилка" class="input"></textarea>
+								</div>
+								<div class="form__bottom">
+									<div class="form__info">
+										By clicking "Send message," I agree to the
+										<a href="#">Privacy
+                                Policy</a>
+										and consent to the processing of my personal data.
+									</div>
+									<button type="submit" class="button">
+										SEND MESSAGE
+										<span class="icon-arrow icon-arrow--icon-arrow-rotate"></span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__logo">
+						<img src="./assets/img/footer-logo.svg" alt="logo">
+					</div>
+					<div class="footer__row">
+						<div class="footer__col">
+							<nav class="footer__nav">
+								<ul>
+									<li>
+										<a href="#">We offer</a>
+									</li>
+									<li>
+										<a href="#">Portfolio</a>
+									</li>
+									<li>
+										<a href="#">About Us</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__col">
+							<div class="footer__info">
+								<h3 class="footer__heading">Contacts</h3>
+								<div class="footer__contact">
+									<a href="tel:+41441234567">+41 44 123 45 67</a>
+									<a href="mailto:info@sunsay.ch">info@sunsay.ch</a>
+								</div>
+							</div>
+							<div class="footer__info">
+								<h3 class="footer__heading">Follow us</h3>
+								<a class="social" href="#">Linkedin</a>
+							</div>
+							<div class="footer__info">
+								<h3 class="footer__heading">Address</h3>
+								<p>
+									SUNSAY NRG Suisse AG, c/o Fellmann & Partner AG, Grafenaustrasse 7, 6300 Zug, Switzerland
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">
+							© SUNSAY NRG Suisse AG. 2025.
+							<a href="#">Privacy Policy</a>
+						</div>
+						<a href="https://fnx.com.ua/ua" target="_blank" class="fenix">
+							Website development:
+							<img src="./assets/img/fenix-logo.svg" alt="fenix logo">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
