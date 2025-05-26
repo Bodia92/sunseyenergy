@@ -23,6 +23,7 @@
   width: 100%;
   display: flex;
 }
+.images__slide picture,
 .images__slide img {
   width: 100%;
   height: 36.875rem;
@@ -126,6 +127,7 @@
   line-height: 1.5;
 }
 @media (max-width: 61.99875em) {
+  .images__slide picture,
   .images__slide img {
     height: 42.5rem;
   }
