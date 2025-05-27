@@ -4946,6 +4946,52 @@ function EffectFade(_ref) {
   });
 }
 function initSliders() {
+  if (document.querySelector(".js-testimonials-slider")) {
+    new Swiper(".js-testimonials-slider", {
+      // для конкретного випадку
+      modules: [Navigation, Pagination],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 3,
+      spaceBetween: 24,
+      //autoHeight: true,
+      speed: 800,
+      //touchRatio: 0,
+      //simulateTouch: false,
+      //loop: true,
+      //preloadImages: false,
+      //lazy: true,
+      // Пагінація
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next"
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 8,
+          autoHeight: true
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 24
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 24
+        }
+      }
+    });
+  }
   if (document.querySelector(".js-images-slider")) {
     new Swiper(".js-images-slider", {
       // для конкретного випадку
