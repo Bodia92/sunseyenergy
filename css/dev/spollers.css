@@ -124,13 +124,13 @@
 
 @media (min-width: 87.5em) {
   .spollers__title {
-    gap: 3.4375rem;
+    gap: 1.5rem;
   }
 }
 
 @media (min-width: 22.5em) and (max-width: 87.5em) {
   .spollers__title {
-    gap: clamp( 0.5rem , -0.516826923075rem  +  4.5192307692vw , 3.4375rem );
+    gap: clamp( 0.5rem , 0.15384615384375rem  +  1.5384615385vw , 1.5rem );
   }
 }
 

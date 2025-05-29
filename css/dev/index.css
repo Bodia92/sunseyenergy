@@ -198,7 +198,7 @@
   border: 0.0625rem solid var(--main-color);
 }
 .why__text {
-  max-width: 25.9375rem;
+  max-width: 30.625rem;
   color: var(--white-color);
 }
 .why__text:not(:last-child) {

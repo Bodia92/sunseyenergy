@@ -359,9 +359,6 @@
   .contacts__col {
     width: 100%;
   }
-  .contacts__col:first-child .contacts__title {
-    max-width: 15.75rem;
-  }
   .contacts__col:not(:last-child) {
     padding-bottom: 2rem;
     border-bottom: 0.0625rem solid var(--stroke-color);
@@ -379,11 +376,11 @@
     padding-right: 2.625rem;
     border-right: 0.0625rem solid var(--stroke-color);
   }
-  .contacts__col:first-child .contacts__title {
-    max-width: 22.5rem;
-  }
   .contacts__col:last-child {
     padding-left: 2.625rem;
+  }
+  .contacts__list {
+    margin-top: 1rem;
   }
 }
 @media (any-hover: hover) {
