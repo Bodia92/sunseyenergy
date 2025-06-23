@@ -2993,6 +2993,7 @@ body::after {
   }
   .hero {
     border-radius: 0 0 2rem 2rem;
+    min-height: 100svh;
   }
   .page--home .hero__title {
     font-size: 2.5rem;
