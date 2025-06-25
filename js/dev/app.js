@@ -5754,17 +5754,4 @@ function setHoverActive(selector, activeClass = "active", minWidth = 992) {
 window.addEventListener("DOMContentLoaded", () => {
   setScrollActive(".what-we-do__title");
   setHoverActive(".what-we-do__title");
-  const itemsTitle = document.querySelectorAll(".what-we-do__title");
-  itemsTitle.forEach((el) => {
-    el.scrollIntoView({ behavior: "smooth", block: "end" });
-  });
-  setTimeout(() => {
-    itemsTitle.forEach((el) => {
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
-    });
-  }, 10);
 });
